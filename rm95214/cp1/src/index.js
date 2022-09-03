@@ -1,4 +1,6 @@
 import React from 'react'
 import ReactDOM  from 'react'
+import App from './App'
 
-ReactDOM.render("TESTE",document.getElementById("root"))
+ReactDOM.render(<App/>,
+document.getElementById("root"))
