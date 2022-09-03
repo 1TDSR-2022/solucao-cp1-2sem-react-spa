@@ -20,9 +20,9 @@ export default function App() {
     //     setAluno(objAluno)
     // }, [])
 
-    const nota1 = 0
-    const nota2 = 0
-    const nota3 = 0
+    const nota1 = 6
+    const nota2 = 6
+    const nota3 = 6
 
     // const notas = [nota1, nota2, nota3]
 
