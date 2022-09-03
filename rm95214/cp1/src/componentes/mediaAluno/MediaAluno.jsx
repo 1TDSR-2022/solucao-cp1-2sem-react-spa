@@ -1,4 +1,5 @@
 import React from "react";
+import "./mediaAluno.css"
 
 
 
@@ -11,13 +12,13 @@ export default function MediaAluno(props){
         fontSize: "2rem"
     }
 
-    const calculaMedia = ()=>{
-        media = ((props.nota1 + props.nota2 + props.nota3)) / 3
+   // const calculaMedia = ()=>{
+ //       media = ((props.nota1 + props.nota2 + props.nota3)) / 3
 
-        if (media <= 0){
-            objEstilo.color = "#FF0000"
-        }else if 
-    }
+        //if (media <= 0){
+        //    objEstilo.color = "#FF0000"
+      //  }else if {}
+    //}
     
     return(
         <div>
