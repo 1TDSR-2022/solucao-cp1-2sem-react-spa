@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
+import MediaAluno from './componentes/mediaAluno/MediaAluno';
 
 export default function App(){
     
@@ -18,14 +19,19 @@ export default function App(){
         turma : "1tdsz"
     })
 
-    useEffect(()=> {
-        setAluno(objAluno)
-    }, [])
+    //useEffect(()=> {
+        //setAluno(objAluno)
+    //}, [])
   
     
     return(
         <>
             <h1>CP1 RWD 1° SEMESTRE</h1>
+            <MediaAluno
+            aluno = {aluno}
+            nota = {nota1}
+            nota2 = {nota2}
+            nota3 = {nota3}/>
         </>
     )
 }
