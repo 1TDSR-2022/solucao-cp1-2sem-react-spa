@@ -1,0 +1,26 @@
+$black :  #000000;
+
+.row{
+    background-color: $black;
+    margin: auto 10vw;
+    border: 5px solid #DF0000;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px 10px #FFA500;
+
+    .col-xm{
+        background-color: #fff;
+        text-align: center;
+        margin: 5vh 2vw;
+        padding: 2vh 0;
+        font-size: 2rem;
+        border-radius: 5px;
+        color: #000000 !important ;
+
+        p{
+            color: #0000FF;
+        }
+    }
+}
+
+
+
