@@ -2,8 +2,26 @@
 $cor-de-fundo : #161010;
 $cor-do-texto : #fff;
 
-
 body{
+
     background-color: $cor-de-fundo;
     color: $cor-do-texto;
+    
+    $uma-cor-qualquer : #fff000;
+
+    //TRABALHANDO COM ESCOPO
+    .divTeste {
+        p{
+            color: #000;
+            &:hover{
+                color: $cor-do-texto;
+            }
+            font-size: 2rem;
+            &:only-child{
+                background-color:#ccc;
+            }
+        }
+    }
+
 }
+
