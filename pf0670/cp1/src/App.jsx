@@ -36,6 +36,11 @@ export default function App() {
                 <p>ESCOPO DO P</p>
             </div>
 
+            <div className="quebraPagina">
+                <hr />
+                <p>Quebra de página</p>
+                <hr />
+            </div>
 
             <MediaAluno
                 aluno={aluno}
