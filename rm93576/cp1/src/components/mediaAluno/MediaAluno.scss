@@ -14,15 +14,15 @@ $cor-paragrafo: #000;
     text-align: center;
 }
 
-body{
 
-    .row{
+
+.row{
         background-color: $cor-de-fundo;
         margin: auto 10vw;
         border: 5px solid $cor-da-borda;
         border-radius: 5px;
         box-shadow: 2px 2px 10px 10px $cor-shadow;
-    }
+
 
     .col-xm{
         @include novomixin(#fff, #000);
@@ -31,11 +31,12 @@ body{
         padding: 2vh 0;
         font-size: 2rem;
         border-radius: 5px;
-        color: #000000 !important ;
+    
     }
     
     p{
         color: $cor-paragrafo;
     }
+
 }
 
