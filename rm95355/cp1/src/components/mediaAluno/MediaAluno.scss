@@ -1,0 +1,47 @@
+/*
+    vw = VIEW-WIDTH
+    vh = VIEW-HEIGHT
+*/
+
+@mixin alunoMixin($tamanho-fonte){
+    text-align: center;
+    font-family: 'Lucida Sans';
+    box-shadow: 3px 5px 5px 5px #63067a;
+    border-radius: 5px;
+    font-size: $tamanho-fonte;
+}
+
+$corFundo : #ff00ff;
+$corTexto : #21c921;
+
+body{
+
+    @include alunoMixin(2rem);
+
+    .row{
+        background-color: $corFundo;
+        margin: auto 10vw;
+        border: 5px solid #DF0000;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px 10px #FFA500;
+    }
+    
+    .col-xm{
+        background-color: #fff;
+        text-align: center;
+        margin: 5vh 2vw;
+        padding: 2vh 0;
+        font-size: 2rem;
+        border-radius: 5px;
+        color: #000000 !important ;
+    }
+    
+    p{
+        color: $corTexto;
+    }
+
+    strong{
+        color: $corTexto;
+    }
+
+}

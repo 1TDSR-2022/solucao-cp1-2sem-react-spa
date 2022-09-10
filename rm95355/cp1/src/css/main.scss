@@ -1,3 +1,14 @@
+//CRIANDO MIXIN 
+@mixin meumixin($tamanho-fonte) {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    box-shadow: 3px 5px 5px 5px #ff0000;
+    border: solid 2px #000;
+    border-radius: 5px; 
+    font-size: $tamanho-fonte;
+}
+
+
 //CRIANDO VARIÁVEIS
 $cor-de-fundo: #161010;
 $cor-do-texto: #fff;
@@ -5,4 +16,25 @@ $cor-do-texto: #fff;
 body{
     background-color: $cor-de-fundo;
     color: $cor-do-texto;
+
+    $uma-cor-qualquer : #fff000;
+
+    //TRABALHANDO COM ESCOPO
+    .divTeste{
+        p{
+            @include meumixin(1rem);
+
+            &:hover{
+                color: $cor-do-texto;
+            }
+            font-size: 2rem;
+            &:only-child{
+                background-color: #ccc;
+            }
+        }
+    } 
+
+    h1{
+        @include meumixin(2rem);
+    }
 }
