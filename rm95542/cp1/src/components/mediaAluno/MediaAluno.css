@@ -7,9 +7,9 @@
 .row{
     background-color: #000000;
     margin: auto 10vw;
-    border: 5px solid #DF0000;
+    border: 5px solid #ccc;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px 10px #FFA500;
+    box-shadow: 2px 2px 10px 10px #fff;
 }
 
 .col-xm{
