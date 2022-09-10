@@ -26,6 +26,19 @@ export default function App(){
     
     return(
         <>
+
+        <div class="divteste">
+            ESCOPO DA DIV
+            <p>ESCOPO DO P</p>
+        </div>
+
+
+       <div className='quebraPagina'>
+       <hr/>
+        <p>Quebra de página</p>
+        <hr/>
+       </div>
+
             <h1>CP1 RWD 1° SEMESTRE</h1>
             <MediaAluno
             aluno = {aluno}

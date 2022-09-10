@@ -1,3 +1,18 @@
+//UTILIZANDO ARQUIVO PARTIALS
+
+@import 'quebraPagina';
+
+
+//CRIANDO MIXIN
+@mixin meumixin {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 3px 5px 5px #ff0000;
+    border: solid 2px #000;
+    border-radius: 5px;
+}
+
+
 // CRIANDO VARIAVEIS
 
 $cor-de-funto: #110a0a;
@@ -7,4 +22,25 @@ $cor-do-texto: #fff;
 body{
     background-color: $cor-de-funto;
     color: $cor-do-texto;
+    $uma-cor-qualquer : e
+
+
+//TRABALHANDO COM ESCOPO
+
+    .divteste {
+        p{
+            color: red;
+            &:hover{
+                color: $cor-do-texto;
+            }
+            font-size: 2rem;
+            &:only-child{
+                background-color: #ccc;
+            }
+        }
+        }
+
+    h1{
+        @include meumixin;
+    }
 }

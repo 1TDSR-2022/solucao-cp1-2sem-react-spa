@@ -1,0 +1,14 @@
+$cor-do-texto: #fff;
+$tamanh-fonte: 2.5rem
+
+
+.quebraPagina{
+
+    hr{
+        height: 2vh;
+        background-color: #a30165;
+    }
+    p{
+        color: $cor-do-texto;
+    }
+}
