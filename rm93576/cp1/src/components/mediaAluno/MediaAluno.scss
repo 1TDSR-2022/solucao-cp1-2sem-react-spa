@@ -1,0 +1,41 @@
+/*
+    vw = VIEW-WIDTH
+    vh = VIEW-HEIGHT
+*/
+
+$cor-de-fundo: #a627c5;
+$cor-da-borda: #4f16d4 ; 
+$cor-shadow: #2f1270;
+$cor-paragrafo: #000;
+
+@mixin novomixin ($cor-de-fundo-col, $cor-fonte) {
+    background-color: $cor-de-fundo-col;
+    color: $cor-fonte;
+    text-align: center;
+}
+
+body{
+
+    .row{
+        background-color: $cor-de-fundo;
+        margin: auto 10vw;
+        border: 5px solid $cor-da-borda;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px 10px $cor-shadow;
+    }
+
+    .col-xm{
+        @include novomixin(#fff, #000);
+        
+        margin: 5vh 2vw;
+        padding: 2vh 0;
+        font-size: 2rem;
+        border-radius: 5px;
+        color: #000000 !important ;
+    }
+    
+    p{
+        color: $cor-paragrafo;
+    }
+}
+
