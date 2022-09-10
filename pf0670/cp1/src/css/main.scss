@@ -1,8 +1,32 @@
+//CRIANDO MIXIN
+@mixin meuMixin($tamanho-fonte, $cor-shadow) {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    box-shadow: 5px 5px 5px $cor-shadow;
+    border: solid 2px rgb(15, 15, 15);
+    border-radius: 5px;
+}
+
 //CRIANDO VARIÁVEIS
 $cor-de-fundo: rgb(15, 15, 15);
 $cor-de-texto: rgb(255, 255, 255);
 
+
 body{
     background-color: $cor-de-fundo;
     color: $cor-de-texto;
+    $uma-cor: rgb(192, 228, 10);
+    //CRIANDO ESCOPO
+    .divTest{
+        p{
+            @include meuMixin(1.2rem,#fff000);
+            &:hover{
+                color: $cor-de-texto;
+            }
+        }  
+    }
+    h1{
+        @include meuMixin(2rem,#ccc);
+    }
 }
+
