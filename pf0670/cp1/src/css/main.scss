@@ -1,0 +1,8 @@
+//CRIANDO VARIÁVEIS
+$cor-de-fundo: rgb(15, 15, 15);
+$cor-de-texto: rgb(255, 255, 255);
+
+body{
+    background-color: $cor-de-fundo;
+    color: $cor-de-texto;
+}
