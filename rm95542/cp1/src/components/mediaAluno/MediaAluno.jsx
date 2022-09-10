@@ -25,7 +25,7 @@ export default function MediaAluno(props) {
 
     return (
         <div>
-            <h2>Componente MÉDIA-ALUNO</h2>
+            <h2>Média das notas</h2>
             <div className="row">
                 <p className="col-xm"><strong>Aluno : </strong>{props.aluno.nome}</p>
                 <p className="col-xm"><strong>RM : </strong>{props.aluno.rm}</p>
