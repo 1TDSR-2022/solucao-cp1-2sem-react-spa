@@ -1,10 +1,42 @@
+//Utilizando arquivo partials
+@import 'quebraPagina';
+
+
+//Criando Mixin
+@mixin meumixin($tamanho-fonte, $cor-shadow){
+    text-align: center;
+    font-family: 'Trebuchet MS';
+    box-shadow: 3px 5px 5px 5px $cor-shadow;
+    border: solid 2px #000;
+    border-radius: 5px;
+    font-size: $tamanho-fonte;
+}
+
+
 // CRIANDO VARIÁVEIS
 $cor-de-fundo :#161010;
 $cor-do-texto : #fff;
 
-
-
 body{
     background-color: $cor-de-fundo;
     color: $cor-do-texto;
+
+    $uma-cor-qualquer : #fff000;
+
+    // trabalhando com escopo 
+    .divTeste {
+        p{
+            @include meumixin(1rem, #fff000);
+            color: #000;        
+            &:hover{
+                color: $cor-do-texto;
+            }
+            &:only-child{
+                background-color: #ccc;
+            }
+        }
+    }
+    h1{
+        @include meumixin(3rem, #00ff00);
+    }
 }

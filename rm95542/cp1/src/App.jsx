@@ -11,8 +11,8 @@ export default function App() {
     // }
 
     const [aluno, setAluno] = useState({
-        nome: "Joaquim",
-        rm: 99999,
+        nome: "Guilherme",
+        rm: 95624,
         turma: "1TDSZ"
     })
 
@@ -29,6 +29,18 @@ export default function App() {
     return (
         <>
             <h1>CP1 de RWD 1º SEMESTRE</h1>
+
+            <div className="divTeste">
+                ESCOPO DA DIV
+                <p>ESCOPO DO P</p>
+            </div>
+            
+            <div className="quebraPagina">
+                <hr />
+                <p>Quebra de página</p>
+                <hr />
+            </div>
+
             <MediaAluno
                 aluno={aluno}
                 nota1={nota1}

@@ -1,0 +1,19 @@
+$cor-do-texto : #fff;
+$tamanho-fonte : 1.5rem;
+
+.quebraPagina{
+    
+    margin: 5vh auto;
+
+    hr{
+        height: 2vh;
+        background-color: #a30165;
+        border: ;
+    }
+    p{
+        color: $cor-do-texto;
+        font-size: $tamanho-fonte;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
