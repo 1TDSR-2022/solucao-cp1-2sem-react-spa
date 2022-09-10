@@ -1,10 +1,23 @@
 $cor-de-fundo: #000;
 $caixa-shadow: 5px 5px 5px 10px #ffa500;
-
+@mixin coluna {
+    background-color: #fff;
+            margin: 5vh auto;
+            padding: 2vh 0;
+            font-size: 2rem;
+            border-radius: 5px;
+            text-align: center;
+            color: #0000 ! important;
+}
 .row{
   
     background-color: $cor-de-fundo;
-    margin: auto 5vw;
+    margin{
+            margin-top: auto;
+            margin-bottom: auto;
+            margin-left: 10vw;
+            margin-right: 10vw;
+    }
     border: 5px solid #DF0000;
     border-radius: 5vw;
     box-shadow: $caixa-shadow;
@@ -15,14 +28,10 @@ $caixa-shadow: 5px 5px 5px 10px #ffa500;
 
 
     .col-xm{
+        @include coluna()
+    }
     
-            background-color: #fff;
-            margin: 5vh auto;
-            padding: 2vh 0;
-            font-size: 2rem;
-            border-radius: 5px;
-            text-align: center;
-            color: #0000 ! important;
+            
    
             p{
                 color: #0000ff;
